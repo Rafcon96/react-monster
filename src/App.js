@@ -28,6 +28,7 @@ render() {
     monster.name.toLowerCase().includes(searchField.toLocaleLowerCase()))
   return (
     <div className="App"  >
+      <h1>Monster Rolodex</h1>
      <SearchBox handelChange={this.handelChange} placeholder='search monsters:' />
      <CardList monsterUsers={filterMonsters} />
     </div>
